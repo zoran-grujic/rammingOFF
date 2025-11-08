@@ -1,18 +1,54 @@
-/COMPARISON.md
-/GITHUB_ANALYSIS.md
-/input_file.gcode
-/K1C_PAUSE_LOCATION.md
-/LINE_ANALYSIS.md
-/LINUX_COMPATIBILITY.md
-/output_file.gcode
-/output_rammingOFF-v2.gcode
-/output_rammingOFF.gcode
-/PRIMING_EXPLANATION.md
-/PRIMING_REMOVAL_RESULT.md
-/rammingOFF-v1.py
-/rammingOFF-v2.py
-/test_fan_settings.py
-/test_no_ramming.gcode
-/test_no_ramming_output.gcode
-/test_settings.py
-/XY_POSITION_ANALYSIS.md
+# G-code files (input/output test files)
+*.gcode
+!example_*.gcode  # Keep example files if you add them later
+
+# Development/analysis documentation
+COMPARISON.md
+GITHUB_ANALYSIS.md
+K1C_PAUSE_LOCATION.md
+LINE_ANALYSIS.md
+LINUX_COMPATIBILITY.md
+PRIMING_EXPLANATION.md
+PRIMING_REMOVAL_RESULT.md
+XY_POSITION_ANALYSIS.md
+
+# Development versions and test scripts
+rammingOFF-v1.py
+rammingOFF-v2.py
+test_*.py
+test_*.gcode
+
+# Python cache and compiled files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS files
+Thumbs.db
+desktop.ini
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Output and temporary files
+output_*.gcode
+*_output.gcode
+temp_*.gcode
